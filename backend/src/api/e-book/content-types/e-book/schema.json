@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "e_books",
+  "info": {
+    "singularName": "e-book",
+    "pluralName": "e-books",
+    "displayName": "E-book",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Date": {
+      "type": "date",
+      "required": true,
+      "unique": false
+    },
+    "Time": {
+      "type": "decimal",
+      "required": true
+    },
+    "Rating": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "max": 5
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "genres": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::genre.genre",
+      "mappedBy": "e_books"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "e_books"
+    },
+    "Userinfo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+button {
+  border-radius: 5px;
+  padding: 5px;
+  background: radial-gradient(#c573f1, #0a0b14 200%);
+  color: white;
+  border: none;
+  width: 90%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+/*# sourceMappingURL=button.css.map */

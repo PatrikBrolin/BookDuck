@@ -1,0 +1,8 @@
+.rating-box input {
+  display: none;
+}
+
+.rating-box .checked-star {
+  color: gold;
+}
+/*# sourceMappingURL=rating.css.map */

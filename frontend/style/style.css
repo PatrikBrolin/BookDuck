@@ -1,0 +1,899 @@
+.checkbox-div {
+  position: relative;
+  margin-top: 5px;
+  height: 20px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.checkbox-div input {
+  pointer-events: none;
+}
+
+.checkbox-div .checkbox-style {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #332F2E;
+  pointer-events: none;
+}
+
+.checkbox-div .awnser {
+  position: absolute;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  border-radius: 60%;
+  background-color: rgba(255, 1, 1, 0.499);
+  z-index: 99;
+  -webkit-transition: .5s;
+  transition: .5s;
+  pointer-events: none;
+  outline: 3px solid black;
+}
+
+.checkbox-div .checked {
+  position: absolute;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  height: 20px;
+  width: 20px;
+  border-radius: 60%;
+  background-color: rgba(0, 128, 0, 0.518);
+  z-index: 99;
+  pointer-events: none;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  background: radial-gradient(#c573f1, #0a0b14 200%);
+  color: white;
+  border: none;
+  width: 90%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.rating-box input {
+  display: none;
+}
+
+.rating-box .checked-star {
+  color: gold;
+}
+
+.login-page {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #121212;
+  z-index: 100;
+}
+
+.login-page .exit-box-login {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -50px;
+  right: -150px;
+  padding: 0px;
+  font-size: 40px;
+  font-weight: 900;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.login-page .exit-box-login span {
+  border-radius: 10px;
+  position: absolute;
+  height: 4px;
+  background: white;
+}
+
+.login-page .exit-box-login span:nth-child(1) {
+  width: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.login-page .exit-box-login span:nth-child(2) {
+  width: 30px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.login-page .my-form-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 400px;
+  padding: 0px;
+}
+
+.login-page .my-form-login > * {
+  margin: 7px;
+}
+
+.login-page .my-form-login input {
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.login-page .my-form-login p {
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.login-page .my-form-login button {
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  border: none;
+}
+
+.create-account-page {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #121212;
+  z-index: 100;
+}
+
+.create-account-page .exit-box-account {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -50px;
+  right: -150px;
+  padding: 0px;
+  font-size: 40px;
+  font-weight: 900;
+  color: grey;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.create-account-page .exit-box-account span {
+  border-radius: 10px;
+  position: absolute;
+  height: 4px;
+  background: white;
+}
+
+.create-account-page .exit-box-account span:nth-child(1) {
+  width: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.create-account-page .exit-box-account span:nth-child(2) {
+  width: 30px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.create-account-page .my-form-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 0;
+}
+
+.create-account-page .my-form-account > * {
+  margin: 7px;
+}
+
+.create-account-page .my-form-account .first-last-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.create-account-page .my-form-account .first-last-name input {
+  width: 48%;
+}
+
+.create-account-page .my-form-account input {
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.create-account-page .my-form-account p {
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.create-account-page .my-form-account button {
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  border: none;
+}
+
+body .main-profile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  grid-row: 3/ span 5;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+body .main-profile .user-img {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  position: relative;
+  margin: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .main-profile .user-img .bi-person-square::before {
+  font-size: 150px;
+  width: 100%;
+  height: 100%;
+}
+
+body .main-profile .user-img .user-tag {
+  font-size: 25px;
+}
+
+body .main-profile .user-info {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+body .main-profile .user-info p {
+  margin: 40px;
+  font-size: 25px;
+}
+
+body aside h2 {
+  margin: 40px 0px;
+}
+
+body aside .books-div-profile {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body aside .books-div-profile .books {
+  position: relative;
+  width: 90%;
+  margin: 20px;
+  -webkit-box-shadow: 2px 2px 4px black;
+          box-shadow: 2px 2px 4px black;
+  background-color: white;
+  color: black;
+}
+
+body aside .books-div-profile .books img {
+  position: relative;
+  width: 50%;
+  height: auto;
+}
+
+body aside .books-div-profile .books .book-type-profile {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+  color: black;
+  width: 50px;
+}
+
+body aside .books-div-profile .books .book-type-profile .bi {
+  width: 50px;
+  height: 50px;
+}
+
+body aside .books-div-profile .books li {
+  margin: 10px;
+  text-align: start;
+}
+
+body .main-create {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  grid-row: 3/ span 5;
+  min-width: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+}
+
+body .main-create .create-buttons {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4 / span 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+}
+
+body .main-create .create-buttons h2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 /span 2;
+}
+
+body .main-create .create-form {
+  position: relative;
+  margin: 20px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3 / span 4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 6;
+  grid-row: 3 / span 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main-create .create-form .select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 65px;
+  border: 1px solid black;
+  overflow: scroll;
+  background-color: white;
+  color: black;
+}
+
+body .main-create .create-form .select-box div {
+  text-align: center;
+  width: 100%;
+}
+
+body .main-create .create-form .select-box div label {
+  font-size: 12px;
+  display: inline-block;
+  min-width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+body .main-create .create-form .select-box .selected {
+  background-color: #a6a6a6;
+}
+
+body .main-create .create-form .select-box input {
+  display: none;
+  width: 100%;
+}
+
+body .main-create .create-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 200px;
+  height: 100%;
+}
+
+body .main-create .create-form form input {
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+body .main-create .create-form form div {
+  margin: 5px 0px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+body .main-create .create-form .length {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body .main-create .create-form .length input {
+  margin-left: 10px;
+  width: 40%;
+}
+
+body aside h2 {
+  margin: 40px 0px;
+}
+
+body aside .books-div-create {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body aside .books-div-create .books {
+  position: relative;
+  width: 90%;
+  margin: 20px;
+  -webkit-box-shadow: 2px 2px 4px black;
+          box-shadow: 2px 2px 4px black;
+  background-color: white;
+  color: black;
+}
+
+body aside .books-div-create .books img {
+  position: relative;
+  width: 50%;
+  height: auto;
+}
+
+body aside .books-div-create .books .book-type-profile {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+  color: black;
+  width: 50px;
+}
+
+body aside .books-div-create .books .book-type-profile .bi {
+  width: 50px;
+  height: 50px;
+}
+
+body aside .books-div-create .books li {
+  margin: 10px;
+  text-align: start;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+  background-color: #121212;
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+body ::-webkit-scrollbar {
+  display: none;
+}
+
+body header {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .bi {
+  font-size: 24px;
+}
+
+body header img {
+  height: 80px;
+  margin-left: 30px;
+}
+
+body header p {
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+body header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body header div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body header div ul li {
+  margin-right: 20px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+body header div ul li :hover {
+  content: "hej";
+}
+
+body header div ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+body section {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+  width: 100%;
+  padding-left: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+body section h2 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+body section .books {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+body section .books label {
+  margin-right: 10px;
+}
+
+body section .e-books {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+body section .e-books label {
+  margin-right: 10px;
+}
+
+body main {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 5;
+  grid-row: 4 / span 5;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+body main .line {
+  height: 1px;
+  width: 90%;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: -1px 1px 1px #332F2E;
+          box-shadow: -1px 1px 1px #332F2E;
+}
+
+body main .books-div {
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (250px)[3];
+      grid-template-columns: repeat(3, 250px);
+}
+
+body main .books-div .books {
+  width: 90%;
+  height: 250px;
+  margin: 15px;
+  background-color: #332F2E;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  overflow: scroll;
+}
+
+body main .books-div .books img {
+  width: 100px;
+  margin: 10px;
+}
+
+body main .books-div .books .book-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .books-div .books .book-type .bi {
+  height: 50px;
+  width: 50px;
+}
+
+body main .books-div .books .book-info {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: 10px;
+}
+
+body main .books-div .books .book-info ul {
+  list-style: none;
+}
+
+body aside {
+  height: 100vh;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5 / 6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 8;
+  grid-row: 1 / span 8;
+  background-color: #332F2E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body aside ul {
+  list-style: none;
+}
+
+body aside ul #all {
+  font-size: 25px;
+}
+
+body aside ul li {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none !important;
+}
+/*# sourceMappingURL=style.css.map */

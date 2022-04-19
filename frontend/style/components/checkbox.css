@@ -1,0 +1,55 @@
+.checkbox-div {
+  position: relative;
+  margin-top: 5px;
+  height: 20px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.checkbox-div input {
+  pointer-events: none;
+}
+
+.checkbox-div .checkbox-style {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #332F2E;
+  pointer-events: none;
+}
+
+.checkbox-div .awnser {
+  position: absolute;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  border-radius: 60%;
+  background-color: rgba(255, 1, 1, 0.499);
+  z-index: 99;
+  -webkit-transition: .5s;
+  transition: .5s;
+  pointer-events: none;
+  outline: 3px solid black;
+}
+
+.checkbox-div .checked {
+  position: absolute;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  height: 20px;
+  width: 20px;
+  border-radius: 60%;
+  background-color: rgba(0, 128, 0, 0.518);
+  z-index: 99;
+  pointer-events: none;
+}
+/*# sourceMappingURL=checkbox.css.map */

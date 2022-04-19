@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "genres",
+  "info": {
+    "singularName": "genre",
+    "pluralName": "genres",
+    "displayName": "Genre",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Genre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "e_books": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::e-book.e-book",
+      "inversedBy": "genres"
+    },
+    "books": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::book.book",
+      "inversedBy": "genres"
+    }
+  }
+}

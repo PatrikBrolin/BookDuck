@@ -1,0 +1,75 @@
+body{
+  .main-profile{
+    display: grid;
+    grid-row: 3/ span 5;
+    grid-template-columns: repeat(2, 1fr);
+    .user-img{
+      grid-column: 1;
+      position: relative;
+      margin: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+        .bi-person-square::before{
+          font-size: 150px;
+          width: 100%;
+          height: 100%;
+      }
+      .user-tag{
+        font-size: 25px;
+      }
+    }
+    .user-info{
+      grid-column: 2;
+      p{
+        margin: 40px;
+        font-size: 25px;
+      }
+    }
+  }
+
+  aside{
+   h2{
+     margin: 40px 0px;
+   }
+    .books-div-profile{
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .books{
+        position: relative;
+        width: 90%;
+        margin: 20px;
+        box-shadow: 2px 2px 4px black;
+        background-color: white;
+        color: black;
+        img{
+          position: relative;
+          width: 50%;
+          height: auto;
+        }
+        .book-type-profile{
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          margin: 10px;
+          color: black;
+          width: 50px;
+          .bi{
+            width: 50px;
+            height: 50px;
+          }
+        }
+        li{
+          margin: 10px;
+          text-align: start;
+        }
+      
+      }
+    }
+  }
+}
