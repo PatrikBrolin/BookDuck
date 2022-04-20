@@ -3,6 +3,8 @@
     display:none
   }
   .checked-star{
-    color: gold
+    background: -webkit-radial-gradient(gold, rgb(108, 91, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

@@ -69,7 +69,9 @@ button {
 }
 
 .rating-box .checked-star {
-  color: gold;
+  background: -webkit-radial-gradient(gold, #6c5b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .login-page {
