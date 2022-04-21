@@ -97,7 +97,7 @@ let getGenre = async (genre) =>{
       })
     })
   }
-
+  //Random sortering av array för att böcker inte ska hamna i ordning 
   genreArray.sort(() => Math.random() - 0.5)
   render(genreArray)
 }
